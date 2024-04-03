@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.step {
+  width: 20%;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.step.active {
+  background-color: #5cb85c;
+}
+
+.step.inactive {
+  background-color: #ccc;
+}
+
+.button-container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
